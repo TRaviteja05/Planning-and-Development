@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Enhanced Simple Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <img src="th.jpeg" alt="image">
+            <h1>Welcome to Our AI Website!</h1>
+            <p>Discover amazing things here.</p>
+            
+        </section>
+
+        <section class="features">
+            <h2>Key Features</h2>
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <h3>Feature 1</h3>
+                    <div class="image-container">
+                        <img src="th (1).jpeg" alt="image1">
+                    </div>
+                    <h3>Description of feature 1.</h3><br>
+                    <p>It is an ability to design smart machines
+                         or to develop software applications that 
+                         can self-learn and imitate the traits of the
+                          human mind with the help of reasoning, 
+                          sensory applications, planning, 
+                          optimal decision making and problem-solving techniques.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Feature 2</h3>
+                    <div class="image-container">
+                        <img src="OIP.jpeg" alt="image2">
+                    </div>
+                    <h3>Description of feature 2.</h3> <br>
+                    <p>Artificial Neural Networks (ANN) also known as 
+                        neural networks (NNs) is based on the collection
+                         of connected nodes known as artificial neurons just like 
+                         human brain cells. Each connection transmits a signal
+                          from one neuron to another neuron after processing it.
+                           With the help of some nonlinear function, the output 
+                           of each neuron generates a real number for a signal at a connection.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Feature 3</h3>
+                    <div class="image-container">
+                        <img src="OIP1.jpeg" alt="image3">
+                        </div>
+                    <h3>Description of feature 3.</h3> <br>
+                    <p>The modern world is stuffed with a lot
+                         of data and with the help of deep learning, 
+                         the digital world is transforming into a beautiful place. 
+                         It is a machine learning technique that automates computers
+                          to think just like humans. The architecture of this technique
+                           includes multiple hidden layers between the input and output layers
+                            as compared to Artificial Neural Networks.</p>
+                </div>
+            </div>
+        </section>
+        
+        <button class="cta-button" id="learn-more-button">Learn More</button>
+            <div id="learn-more-content" style="display: none;">
+                <p>This is the additional information you requested.</p>
+                <p>We are a company specializing in innovative solutions. Our goal is to provide high-quality services and products to our customers.</p>
+                <p>Feel free to explore our website and learn more about what we offer.</p>
+                <button id="hide-content-button">Hide Content</button>
+            </div>
+
+        <section class="contact">
+            <h2>Contact Us</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name"><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br><br>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message"></textarea><br><br>
+
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+
+        <section id="about-section" class="about">
+            <h2>About Us</h2>
+            <p>Welcome to our AI-powered website!</p>
+            <p>We are a team of passionate developers and AI enthusiasts dedicated to creating innovative solutions that make a positive impact.</p>
+            <p>Our mission is to explore the limitless possibilities of artificial intelligence and deliver cutting-edge technologies to our users.</p>
+            <p>Feel free to explore our site and discover the power of AI!</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 My Website. All rights reserved.</p>
+    </footer>
+    <script>
+        document.getElementById('learn-more-button').addEventListener('click', function() {
+            document.getElementById('learn-more-content').style.display = 'block';
+        });
+
+        document.getElementById('hide-content-button').addEventListener('click', function() {
+            document.getElementById('learn-more-content').style.display = 'none';
+        });
+    </script>
+</body>
+</html>
